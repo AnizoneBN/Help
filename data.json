@@ -295,15 +295,6 @@
         "taka": 910,
         "cash": 230,
         "payment": 1140
-    },
-    {
-        "id": 34,
-        "name": "Finn Edwards",
-        "mobileNumber": "6789012345",
-        "receive": "No",
-        "taka": 690,
-        "cash": 190,
-        "payment": 1290
-        
     }
+
     ]
