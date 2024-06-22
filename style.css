@@ -1,85 +1,177 @@
-table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        table, th, td {
-            border: 1px solid black;
-          
-        }
-        th, td {
-            padding: 10px;
-            text-align: left;
-        }
-        th {
-            background-color: #f2f2f2;
-        }
-        
-        h2 {
-          text-align: center;
-          color: #18f;
-        }
-          #hr {
-    border: none; 
-    height: 0.1px; 
-    background-color: rgba(211, 211, 211, 0.9); 
-    width: 100%;
-    margin: 0; 
-    padding: 0;
-  }
-        #search-container {
-            margin-bottom: 20px;
-            position: relative;
-            width: 300px;
-        }
-        #search-input {
-            width: 100%;
-            padding: 10px 10px 10px 40px;
-            font-size: 16px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-        }
-        #search-icon {
-            position: absolute;
-            top: 50%;
-            left: 10px;
-            transform: translateY(-50%);
-            font-size: 20px;
-            color: #aaa;
-        }
-        #search-input {
-    width: 100%;
-    padding: 10px 10px 10px 40px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    outline: none; 
-    transition: border-color 0.3s, box-shadow 0.3s; 
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
 }
 
-#search-input:focus {
-    border-color: #007BFF; 
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); 
-    outline: none; 
+.coupon-container {
+    display: flex;
+    gap: 20px;
 }
 
-#search-input:hover {
-    border-color: #0056b3; 
-    outline: none; 
-}
-
-#search-container {
-    margin-bottom: 20px;
+.coupon {
     position: relative;
-    width: 300px;
+    width: 450px;
+    padding: 20px;
+    border-radius: 30px;
+   /* box-shadow: 0 4px 8px rgba(0,0,0,0.1);*/
+    text-align: center;
 }
 
-#search-icon {
-    position: absolute;
-    top: 50%;
-    left: 10px;
-    transform: translateY(-50%);
-    font-size: 20px;
-    color: #aaa;
+.yellow {
+    background-color: #ffc107;
+    margin-left: 100px; 
 }
+
+.pink {
+    background-color: #f06292;
+}
+
+.coupon-content {
+    position: relative;
+    z-index: 1;
+}
+
+.discount {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.use-by, .coupon-code {
+    margin-top: 10px;
+}
+
+.cut-line {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 300px;
+    transform: translateX(-50%);
+    width: 0;
+    border-left: 2px dotted white;
+    z-index: 0;
+}
+
+.cut-line::before,
+.cut-line::after {
+    content: '';
+    position: absolute;
+    left: -20px;
+    width: 41px;
+    height: 41px;
+    border-radius: 20px;
+    background-color: #f0f0f0;
+    z-index: -1;
+}
+
+.cut-line::before {
+    top: -20px;
+}
+
+.cut-line::after {
+    bottom: -20px;
+}
+
+
+
+  #discount_5 {
+    margin-left: 470px; 
+    font-size: 30px;
+    margin-top: -120px;
+    margin-bottom: 50px;
+    font-weight: bold;
+  }
+  
+ #discount_5 span {
+   font-size: 16px; font-weight: 400; margin-top: -20px;
+ }
+
+/* Extra small devices (phones, less than 576px) */
+@media (max-width: 575.98px) {
+  
+  
+ .coupon-container {
+   margin-left: -17.5px;
+ }
+  
+  .coupon {
+    background-color: lightblue;
+        position: relative;
+    width: 280px;
+    height: 100px;
+    padding: 20px;
+    border-radius: 30px;
+   /* box-shadow: 0 4px 8px rgba(0,0,0,0.1);*/
+    text-align: center;
+    
+    
+  }
+#discount {
+ 
+   font-weight: bold;
+   font-size: 20px; 
+   margin-left: 30px;
+   margin-top: 5px;
+   
+}
+#discount_2 {
+  font-weight: bold;
+  margin-top: -12px;
+  font-size: 14px;
+  margin-left: 55px;
+}
+
+#discount_3 {
+  margin-left: 35px; 
+  font-size: 13px;
+  margin-top: -7px;
+}
+  #discount_4 {
+    margin-left: 60px;
+    font-size: 15px;
+    margin-top: -7px;
+  }
+  
+  
+  .cut-line {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 200px;
+    transform: translateX(-50%);
+    width: 0;
+    border-left: 2px dotted white;
+    z-index: 0;
+}
+
+.cut-line::before,
+.cut-line::after {
+    content: '';
+    position: absolute;
+    left: -20px;
+    width: 41px;
+    height: 41px;
+    border-radius: 20px;
+    background-color: #f0f0f0;
+    z-index: -1;
+}
+
+#discount_5 {
+  margin-left: 360px;
+  font-size: 20px;
+  margin-top: -90px;
+  margin-bottom: 50px;
+  font-weight: bold;
+}
+#discount_5 span {
+  font-size: 12px; 
+  font-weight: 400; 
+  margin-top: -20px;
+}
+
+}
+
